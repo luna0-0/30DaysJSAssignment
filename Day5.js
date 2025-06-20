@@ -27,19 +27,13 @@ while (i <= 50) {
 }
 console.log("Sum of all numbers from 1 to 50 is: ", sum);
 
-//Program to find Sum all digits of a number
-let num = Number(
-  prompt("Enter a multi-digit number to find sum of each digit:")
-);
 i = 1;
-let s = 0;
-do {
-  let r;
-  r = num % 10;
-  s += r;
+sum = 0;
+do{
+  sum = sum + i;
   i++;
-} while (i < String(num).length);
-console.log("The sum of digits of ", num, " is ", s);
+}while (i <= 30) 
+console.log("Sum of all numbers from 1 to 30 is: ", sum);
 
 //Program to print numbers from 1 to 10. Skip number 5 and Stop the loop when the number is 8.
 for (let j = 1; j <= 10; j++) {
