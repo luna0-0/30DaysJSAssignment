@@ -36,9 +36,9 @@ let factorial = function (num) {
   if (num == 0 || num == 1) {
     return 1;
   }
-  for (let i = 2; i < num; i++) {
+  for (let i = 2; i <= num; i++) {
     f = f * i;
-    return f;
   }
+  return f;
 };
 console.log("Factorial of ", num, " is: ", factorial(num));
